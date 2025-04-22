@@ -1,0 +1,92 @@
+/* أنماط إشعار نجاح التسجيل */
+.success-toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100px);
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    min-width: 320px;
+    max-width: 500px;
+    z-index: 10000;
+    overflow: hidden;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.success-toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+.success-toast i.fa-check-circle {
+    font-size: 2rem;
+    color: white;
+    background-color: var(--success-color);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.toast-message {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.toast-message h4 {
+    margin: 0 0 5px 0;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.toast-message p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.close-toast {
+    background: none;
+    border: none;
+    color: #999;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-right: auto;
+}
+
+.close-toast:hover {
+    color: var(--primary-color);
+}
+
+/* تأثير الظهور */
+@keyframes pulse-success {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.success-toast.show i.fa-check-circle {
+    animation: pulse-success 0.3s ease-in-out;
+}
+
+/* تكييف للشاشات الصغيرة */
+@media (max-width: 576px) {
+    .success-toast {
+        min-width: 90%;
+        max-width: 90%;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .success-toast i.fa-check-circle {
+        width: 100%;
+        padding: 10px;
+    }
+}

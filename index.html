@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassSecure - حماية كلمات المرور</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/notification.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>PassSecure</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">الرئيسية</a></li>
+                <li><a href="#why-care">لماذا تهتم؟</a></li>
+                <li><a href="#tips">نصائح</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+                <li><a href="login.html" class="login-btn"><i class="fas fa-sign-in-alt"></i> تسجيل الدخول</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>كلمة مرورك = قفل بيتك</h1>
+                <p class="lead">حماية كلمة المرور الخاصة بك هي خط دفاعك الأول عن معلوماتك الشخصية</p>
+                <div class="cta">
+                    <a href="#why-care" class="btn primary">لماذا يجب أن تهتم؟</a>
+                    <a href="#tips" class="btn secondary">نصائح للحماية</a>
+                </div>
+                <div class="hero-image">
+                    <img src="img/lock-shield.svg" alt="حماية كلمة المرور">
+                </div>
+            </div>
+        </section>
+
+        <section id="why-care" class="why-section">
+            <div class="container">
+                <h2>ليش لازم تنتبه؟</h2>
+                <div class="card-container">
+                    <div class="card animate-on-scroll">
+                        <i class="fas fa-unlock danger"></i>
+                        <h3>كلمة مرور ضعيفة</h3>
+                        <p>إذا كانت كلمة مرورك ضعيفة، يمكن اختراقها بسهولة وسرعة باستخدام برامج التخمين.</p>
+                    </div>
+                    <div class="card animate-on-scroll">
+                        <i class="fas fa-user-secret danger"></i>
+                        <h3>تسريب الكود</h3>
+                        <p>عند مشاركة كلمة المرور أو رمز التحقق بالخطأ، تفتح المجال للمخترقين للوصول إلى حساباتك.</p>
+                    </div>
+                    <div class="card animate-on-scroll">
+                        <i class="fas fa-money-bill-wave danger"></i>
+                        <h3>خسارة مالية</h3>
+                        <p>أي أحد يدخل على حسابك يمكنه سحب أموالك أو استخدام معلوماتك المالية!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tips" class="tips-section">
+            <div class="container">
+                <h2>نصايح تحميك</h2>
+                
+                <div class="tip-wrapper">
+                    <div class="tip-content">
+                        <h3><i class="fas fa-key"></i> اختر كلمة مرور قوية</h3>
+                        <ul>
+                            <li>لا تحط اسمك، ولا رقم جوالك، ولا شي سهل التخمين.</li>
+                            <li>حط حروف كبيرة وصغيرة، أرقام، ورموز.</li>
+                            <li>مثال: <span class="password-example">@Hsn2025!</span></li>
+                        </ul>
+                    </div>
+                    <div class="tip-image">
+                        <div class="password-strength-meter">
+                            <div class="weak">ضعيف</div>
+                            <div class="medium">متوسط</div>
+                            <div class="strong">قوي</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tip-wrapper reverse">
+                    <div class="tip-content">
+                        <h3><i class="fas fa-clone"></i> لا تكرر نفس الكلمة بكل حساب</h3>
+                        <ul>
+                            <li>لو تهكر واحد، الباقي صار سهل يخترقونه.</li>
+                            <li>استخدم مدير كلمات مرور زي:</li>
+                            <li>Bitwarden أو 1Password</li>
+                        </ul>
+                    </div>
+                    <div class="tip-image">
+                        <img src="img/password-manager.svg" alt="مدير كلمات المرور">
+                    </div>
+                </div>
+
+                <div class="tip-wrapper">
+                    <div class="tip-content">
+                        <h3><i class="fas fa-mobile-alt"></i> فعّل التحقق بخطوتين (2FA)</h3>
+                        <ul>
+                            <li>إذا سجلت دخول، يوصلك كود برسالة نصية أو من تطبيق.</li>
+                            <li>مهم جداً: لا تعطي الكود لأي أحد يتصل عليك، حتى لو قال إنه من البنك أو شركة معروفة.</li>
+                        </ul>
+                    </div>
+                    <div class="tip-image">
+                        <div class="two-factor-animation">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div class="code">123456</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tip-wrapper reverse">
+                    <div class="tip-content">
+                        <h3><i class="fas fa-exclamation-triangle"></i> لا تعطي رقم جوالك لأي موقع مشبوه</h3>
+                        <ul>
+                            <li>بعضهم يستخدمه يرسل لك روابط احتيال أو يستغلون الكود لو وصلك فجأة</li>
+                        </ul>
+                    </div>
+                    <div class="tip-image">
+                        <div class="phishing-warning">
+                            <i class="fas fa-ban"></i>
+                            <div class="fake-link">https://fake-bank.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="password-checker" class="password-section">
+            <div class="container">
+                <h2>اختبر قوة كلمة مرورك</h2>
+                <div class="checker-container">
+                    <div class="password-input">
+                        <input type="password" id="password-field" placeholder="أدخل كلمة المرور للتحقق من قوتها">
+                        <i class="fas fa-eye-slash toggle-password"></i>
+                    </div>
+                    <div class="strength-meter">
+                        <div class="meter">
+                            <div class="meter-bar" id="strength-meter-bar"></div>
+                        </div>
+                        <p id="strength-text">لم يتم إدخال كلمة مرور بعد</p>
+                    </div>
+                    <div class="password-feedback" id="feedback-container"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>تواصل معنا</h2>
+                <p>إذا كان لديك أي استفسار أو ترغب في معرفة المزيد عن أمان كلمات المرور</p>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">الاسم</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">رسالتك</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">إرسال</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>PassSecure</span>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#why-care">لماذا تهتم</a></li>
+                        <li><a href="#tips">نصائح</a></li>
+                        <li><a href="#contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>تابعنا</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 PassSecure - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
